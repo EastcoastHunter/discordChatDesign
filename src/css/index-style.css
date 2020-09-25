@@ -1,0 +1,129 @@
+.row {
+    display: flex
+}
+
+.col {
+    flex: 1
+}
+
+@media(max-width:48em) {
+    .row {
+        flex-direction: column
+    }
+
+    .col {
+        flex: 0 0 auto
+    }
+}
+
+@media(min-width:48em) {
+    .col-tenth {
+        flex: 0 0 10%
+    }
+
+    .col-fifth {
+        flex: 0 0 20%
+    }
+
+    .col-quarter {
+        flex: 0 0 25%
+    }
+
+    .col-third {
+        flex: 0 0 33.3333334%
+    }
+
+    .col-half {
+        flex: 0 0 50%
+    }
+}
+
+/* Base */
+body {
+    margin: 0;
+}
+
+html {
+    background: #36393f;
+    color: rgba(255, 255, 255, 0.7);
+    font: 16px/1.4 'Whitney', 'Roboto', sans-serif;
+}
+
+/* Elements */
+a {
+    color: #f6f6f7;
+    text-decoration: none;
+}
+
+.icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+.icon path {
+    fill: #f6f6f7;
+}
+
+.right {
+    text-align: right;
+}
+
+select,
+input[type=text] {
+    margin-top: 0.5rem;
+    color: #aaa;
+    display: block;
+    padding: 0.5rem;
+    background: #313339;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+select {
+    padding-left: 0.25rem;
+    padding-right: 0.75rem;
+}
+
+/* Links */
+nav a:hover {
+    opacity: 0.5;
+}
+
+small {
+    display: block;
+    opacity: 0.8;
+}
+
+/* Nav */
+nav {
+    padding: 6rem 3rem;
+    background: #7289da;
+    color: #fff;
+    min-height: 100vh;
+}
+
+nav small {
+    margin: 1rem 0;
+}
+
+h1 {
+    font-weight: normal;
+    color: #f6f6f7;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Main */
+main {
+    padding: 3rem 4rem;
+}
+
+h2 {
+    padding-bottom: 0.75rem;
+    color: #fff;
+    border-bottom: 0.25rem solid rgba(185, 187, 190, .1);
+}
